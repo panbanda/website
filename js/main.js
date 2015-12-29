@@ -15,7 +15,7 @@
 
         // Add button
         if (item.url) {
-          html += '<a class="ui bottom attached button" href="'+ item.url +'"><i class="add icon"></i>View Project</a>';
+          html += '<a target="_blank" class="ui bottom attached button" href="'+ item.url +'"><i class="add icon"></i>View Project</a>';
         }
 
         html += '</div>';
