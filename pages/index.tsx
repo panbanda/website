@@ -1,10 +1,8 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
 import Typewriter from "typewriter-effect";
-import { VStack, Box, IconButton, Icon } from "@chakra-ui/react";
+import { VStack, Box, IconButton } from "@chakra-ui/react";
 import { FaLinkedin } from "react-icons/fa";
-import { BiWinkSmile } from "react-icons/bi";
 import Link from "next/link";
 
 const Home: NextPage = () => {
