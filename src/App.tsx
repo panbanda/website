@@ -1,19 +1,14 @@
-import type { NextPage } from "next";
-import Head from "next/head";
 import Typewriter from "typewriter-effect";
-import { VStack, Box, IconButton } from "@chakra-ui/react";
+import { Link, VStack, Box, IconButton } from "@chakra-ui/react";
 import { FaLinkedin } from "react-icons/fa";
-import Link from "next/link";
+import { extendTheme, ThemeProvider, CSSReset } from "@chakra-ui/react";
 
-const Home: NextPage = () => {
+const theme = extendTheme();
+
+function App() {
   return (
-    <>
-      <Head>
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Lalezar"
-        />
-      </Head>
+    <ThemeProvider theme={theme}>
+      <CSSReset />
       <VStack
         bgGradient="linear(to-bl, red.600, orange.400)"
         clipPath="polygon(2% 1%, 96% 2%, 106% 90%, 4% 110%)"
@@ -47,8 +42,8 @@ const Home: NextPage = () => {
           />
         </Link>
       </VStack>
-    </>
+    </ThemeProvider>
   );
-};
+}
 
-export default Home;
+export default App;
